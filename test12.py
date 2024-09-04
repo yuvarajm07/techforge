@@ -1,8 +1,8 @@
 user_pass=[{"user name":"yuva","password":"yuva@123"},{"user name":"ajay","password":"ajay@123"},{"user name":"vishnu","password":"vishnu@123"}]
 
 while True:
-    ent=input("Enter your user name :")
-    pas=input("enter the password:")
+    ent=input("Enter your user name :").strip().lower()
+    pas=input("enter the password:").strip()
     if ent == user_pass[0]["user name"] and pas==user_pass[0]["password"] :
             print("welcome!!")      
             
